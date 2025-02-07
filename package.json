@@ -8,8 +8,7 @@
     "build": "vite build --base=/portfolio/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "glob": "^8.1.0",
