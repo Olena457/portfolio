@@ -3,7 +3,7 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import { globalStylesOptions } from './global.styles';
+import { globalStylesOptions } from './global.styles.js';
 
 export default defineConfig(({ command }) => {
   return {

@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/portfolio/",
     "preview": "vite preview",
-    "build:preview": "vite build && vite preview",
-    "predeploy": "npm run build"
+    "build:preview": "vite build && vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
