@@ -6,9 +6,8 @@
 
 .header-container {
   display: flex;
-
   justify-content: space-between;
-  background-color: $_header_color_bg;
+  background: $_header_color_bg;
   padding: 16px;
   box-sizing: border-box;
   width: 100%;
@@ -34,14 +33,15 @@
   top: 73px;
   left: 0;
   width: 100%;
+  min-height: 100%;
   z-index: 20;
-  background-color: $_header_color_bg;
+  background: $_header_color_bg;
   padding: 16px 16px 64px;
   overflow: hidden;
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  max-width: 320px;
+  min-width: 320px;
   display: flex;
   transition: visibility 350ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,12 +66,18 @@
   font-family: 'Signika', serif;
   font-weight: 400;
   @include font(18, 27);
+  color: $_header_accent_color;
   padding: 4px;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: $_header_accent_color;
+    color: $_link_color;
+    background-color: $_header_color_hover;
+  }
+  &:focus {
+    color: $_link_color;
+    background-color: $_header_color_hover;
   }
 }
 
@@ -95,9 +101,15 @@
   &.is-visible {
     display: block;
   }
+
+  /* Приховуємо бекдроп для планшетів і більше */
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-@include media(desktop) {
+/* Стилі для планшетів (768px - 1199.98px) */
+@include media('tablet') {
   .header-container {
     padding: 24px 72px;
   }
@@ -110,8 +122,72 @@
     display: none;
   }
 
+  .header-mob-nav {
+    display: none;
+  }
+
   .header-list {
     flex-direction: row;
     gap: 32px;
+  }
+
+  .header-backdrop {
+    display: none;
+  }
+}
+
+/* Стилі для десктопів (1200px - 1439.98px) */
+@include media('desktop') {
+  .header-container {
+    padding: 24px 72px;
+  }
+
+  .header-desk-nav {
+    display: flex;
+  }
+
+  .header-button-menu {
+    display: none;
+  }
+
+  .header-mob-nav {
+    display: none;
+  }
+
+  .header-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .header-backdrop {
+    display: none;
+  }
+}
+
+/* Стилі для великих десктопів (1440px і більше) */
+@include media('large-desktop') {
+  .header-container {
+    padding: 24px 72px;
+  }
+
+  .header-desk-nav {
+    display: flex;
+  }
+
+  .header-button-menu {
+    display: none;
+  }
+
+  .header-mob-nav {
+    display: none;
+  }
+
+  .header-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .header-backdrop {
+    display: none;
   }
 }

@@ -1,12 +1,34 @@
+// @import './breakpoints';
+
+// .container {
+//   background-color: $_main_bg_color_body;
+//   width: $mobile;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @include media(desktop) {
+//     width: $desktop;
+//   }
+// }
 @import './breakpoints';
 
 .container {
   background-color: $_main_bg_color_body;
-  width: $mobile;
+  width: 100%;
+  max-width: $large-desktop;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 16px;
 
-  @include media(desktop) {
-    width: $desktop;
+  @include media('tablet') {
+    padding: 0 24px;
+  }
+
+  @include media('desktop') {
+    padding: 0 32px;
+  }
+
+  @include media('large-desktop') {
+    padding: 0 48px;
   }
 }
