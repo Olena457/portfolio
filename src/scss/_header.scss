@@ -1,9 +1,17 @@
-.header {
+@import './common/vars';
+@import './common/breakpoints';
+@import './common/mixins';
+@import './common/reset';
+
+.header-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #042c0e;
+  background-color: $main-red;
+  background-color: red;
+  background: vars.$main-red;
+  background-color: $main-red;
   z-index: 1;
   box-shadow: 0px 4px 10px 0px rgba(9, 9, 9, 0.61);
 }
@@ -33,4 +41,13 @@
 .nav-link:hover,
 .nav-link:focus {
   color: $_header_accent_color;
+}
+.header-burger {
+  background: $_main_red;
+  border: none;
+}
+
+.header-burger-icon {
+  width: 32px;
+  height: 32px;
 }
