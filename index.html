@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./scss/styles.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Signika:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/styles-21bee014.css">
   </head>
 
   <body>
-    <header class="header-section">
+    <header class="header">
+      <header class="header-container">
   <div class="header-container">
-    <a class="header-logo" href="./index.html"
+    <a href="./index.html" class="header-homepage-link"
       ><img
         class="header-icon"
         src="/portfolio/assets/my-logo-4214432a.jpg"
@@ -29,33 +31,45 @@
       />
       <p class="header-logo-text">portfolio</p>
     </a>
-    <button class="header-burger" type="button">
+    <button class="header-button-menu" type="button" aria-label="toggle-menu">
       <img
+       class="header-button-icon-open"
         src="data:image/png;base64,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"
-        alt="Burger Menu"
-        class="header-burger-icon"
-        width="32"
-        height="32"
+        alt="burger"
+
+        width="24"
+        height="24"
+      />
+      <img
+        class="header-button-icon-close hidden"
+        src="/portfolio/assets/cross-e5f83f18.png"
+        alt="cross"
+        width="24"
+        height="24"
       />
     </button>
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#about">About</a>
+    <nav class="header-desk-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#hero-id" class="header-link">Home</a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#footer">Footer</a>
+        <li class="header-item">
+          <a href="#about-us-id" class="header-link">About</a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="./index.html" class="nav-link">Home</a>
-        </li> -->
-        <li class="nav-item">
-          <a href="./page-2.html" class="nav-link">Gallery</a>
+        <li class="header-item">
+          <a href="#skills-id" class="header-link">Skills</a>
+        </li>
+        <li class="header-item">
+          <a href="#footer-id" class="header-link">Footer</a>
+        </li>
+
+        <li class="header-item">
+          <a href="./page-2.html" class="header-link">Gallery</a>
         </li>
 
         <li class="nav-item">
-          <a href="./page-3.html" class="nav-link">Details</a>
+          <a href="./page-3.html" class="header-link">Details</a>
         </li>
       </ul>
     </nav>
@@ -64,35 +78,34 @@
 
 <!-- mobile menu overlay -->
 
-<div class="mob-menu-overlay">
-  <div class="mob-menu">
-    <button class="mob-menu-close-btn" type="button">
-      <svg class="mob-menu-close-icon" width="32" height="32">
-        <use href="../img/cross.svg"></use>
-      </svg>
-    </button>
+<div class="header-backdrop"></div>
+ <nav class="header-mob-nav">
+    <ul class="header-list">
+      <li class="header-item">
+          <a href="#hero-id" class="header-link">Home</a>
+        </li>
+        <li class="header-item">
+          <a href="#about-us-id" class="header-link">About</a>
+        </li>
+        <li class="header-item">
+          <a href="#skills-id" class="header-link">Skills</a>
+        </li>
+        <li class="header-item">
+          <a href="#footer-id" class="header-link">Footer</a>
+        </li>
 
-    <nav class="mob-menu-nav">
-      <ul class="mob-menu-nav-list">
-        <li class="mob-menu-nav-item">
-          <a href="#about" class="mob-menu-nav-link">About</a>
-        </li>
-        <li class="mob-menu-nav-item">
-          <a href="#footer" class="mob-menu-nav-link">Footer</a>
+        <li class="header-item">
+          <a href="./page-2.html" class="header-link">Gallery</a>
         </li>
 
-        <li class="mob-menu-nav-item">
-          <a href="./page-2.html" class="mob-menu-nav-link">Gallery</a>
+        <li class="nav-item">
+          <a href="./page-3.html" class="header-link">Details</a>
         </li>
-        <li class="mob-menu-nav-item">
-          <a href="./page-3.html" class="mob-menu-nav-link">Details</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    </ul>
+  </nav>
 </div>
 
-
+    </header>
     <main>
       <section class="about-section">
   <div class="about-container">
@@ -109,9 +122,12 @@
   </div>
 </section>
 
+      
+      
     </main>
 
-    <footer class="container-footer">
+    <footer>
+      <footer class="container-footer">
   <div class="footer-container">
     <section>
       <h3>footer</h3>
@@ -119,7 +135,7 @@
   </div>
 </footer>
 
-
+    </footer>
     
   </body>
 </html>
