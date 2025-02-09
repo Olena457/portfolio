@@ -1,6 +1,6 @@
-<header class="header-section">
+<header class="header-container">
   <div class="header-container">
-    <a class="header-logo" href="./index.html"
+    <a href="./index.html" class="header-homepage-link"
       ><img
         class="header-icon"
         src="./img/gallery/my-logo.jpg"
@@ -10,33 +10,45 @@
       />
       <p class="header-logo-text">portfolio</p>
     </a>
-    <button class="header-burger" type="button">
+    <button class="header-button-menu" type="button" aria-label="toggle-menu">
       <img
+       class="header-button-icon-open"
         src="./img/burger.png"
-        alt="Burger Menu"
-        class="header-burger-icon"
-        width="32"
-        height="32"
+        alt="burger"
+
+        width="24"
+        height="24"
+      />
+      <img
+        class="header-button-icon-close hidden"
+        src="./img/cross.png"
+        alt="cross"
+        width="24"
+        height="24"
       />
     </button>
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#about">About</a>
+    <nav class="header-desk-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#hero-id" class="header-link">Home</a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#footer">Footer</a>
+        <li class="header-item">
+          <a href="#about-us-id" class="header-link">About</a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="./index.html" class="nav-link">Home</a>
-        </li> -->
-        <li class="nav-item">
-          <a href="./page-2.html" class="nav-link">Gallery</a>
+        <li class="header-item">
+          <a href="#skills-id" class="header-link">Skills</a>
+        </li>
+        <li class="header-item">
+          <a href="#footer-id" class="header-link">Footer</a>
+        </li>
+
+        <li class="header-item">
+          <a href="./page-2.html" class="header-link">Gallery</a>
         </li>
 
         <li class="nav-item">
-          <a href="./page-3.html" class="nav-link">Details</a>
+          <a href="./page-3.html" class="header-link">Details</a>
         </li>
       </ul>
     </nav>
@@ -45,30 +57,29 @@
 
 <!-- mobile menu overlay -->
 
-<div class="mob-menu-overlay">
-  <div class="mob-menu">
-    <button class="mob-menu-close-btn" type="button">
-      <svg class="mob-menu-close-icon" width="32" height="32">
-        <use href="../img/cross.svg"></use>
-      </svg>
-    </button>
+<div class="header-backdrop"></div>
+ <nav class="header-mob-nav">
+    <ul class="header-list">
+      <li class="header-item">
+          <a href="#hero-id" class="header-link">Home</a>
+        </li>
+        <li class="header-item">
+          <a href="#about-us-id" class="header-link">About</a>
+        </li>
+        <li class="header-item">
+          <a href="#skills-id" class="header-link">Skills</a>
+        </li>
+        <li class="header-item">
+          <a href="#footer-id" class="header-link">Footer</a>
+        </li>
 
-    <nav class="mob-menu-nav">
-      <ul class="mob-menu-nav-list">
-        <li class="mob-menu-nav-item">
-          <a href="#about" class="mob-menu-nav-link">About</a>
-        </li>
-        <li class="mob-menu-nav-item">
-          <a href="#footer" class="mob-menu-nav-link">Footer</a>
+        <li class="header-item">
+          <a href="./page-2.html" class="header-link">Gallery</a>
         </li>
 
-        <li class="mob-menu-nav-item">
-          <a href="./page-2.html" class="mob-menu-nav-link">Gallery</a>
+        <li class="nav-item">
+          <a href="./page-3.html" class="header-link">Details</a>
         </li>
-        <li class="mob-menu-nav-item">
-          <a href="./page-3.html" class="mob-menu-nav-link">Details</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    </ul>
+  </nav>
 </div>
