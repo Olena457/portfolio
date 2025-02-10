@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/portfolio/assets/styles-47928b81.css">
+    <link rel="stylesheet" href="/portfolio/assets/styles-9e13315d.css">
   </head>
 
   <body>
@@ -161,33 +161,33 @@
         <ul class="skills-block-list">
           <li data-scroll>HTML5</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/html-7d1444aa.png" alt="html" />
           </li>
           <li data-scroll>CSS3</li>
           <li data-scroll>SCSS</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/tailwind-582fd504.png" alt="tailwind" />
           </li>
           <li data-scroll>JavaScript</li>
           <li data-scroll>React.js</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="github" />
           </li>
           <li data-scroll>Redux.js</li>
           <li data-scroll>REST API</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/figma-1bff2d97.png" alt="figma" />
           </li>
           <li data-scroll>TypeScript</li>
           <li data-scroll>Figma</li>
           <li data-scroll>Firebase</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/scss-a2dcf41a.png" alt="SCSS" />
           </li>
           <li data-scroll>Node.js</li>
           <li data-scroll>Next.js</li>
           <li class="skill-separator">
-            <img src="path/to/separator-icon.png" alt="Separator" />
+            <img src="/portfolio/assets/firebase-482a0ef6.png" alt="firebase" />
           </li>
           <li data-scroll>Postman</li>
           <li data-scroll>MongoDB</li>
@@ -202,18 +202,107 @@
   </div>
 </section>
 
-      <section class="projects-section">
-  <div class="progects-container">
-    <section>
-      <h3>progects</h3>
-      <img
-        class="header-icon"
-        src="/portfolio/assets/bitcoin-1-3384cd7b.png"
-        alt="bitcoin"
-        width="360"
-        height="220"
-      />
-    </section>
+      <section class="projects-section" id="projects">
+  <div class="projects-container container">
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects-wrap">
+      <!-- Перша пара: зображення справа, опис зліва -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./img/event-1.png" alt="Project 1" />
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">Events board</h3>
+          <p class="project-description">
+            This application was built using HTML, CSS, JavaScript,React-router,
+            Redux, and Firebase. It is a web application for organizers and
+            participants to create and register for events.
+          </p>
+          <a
+            href="https://github.com/Olena457/events-registration.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://events-registration-ten.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/portfolio/assets/lingo-1-c5c26826.png" alt="Project 2" />
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">Learn easy</h3>
+          <p class="project-description">
+            This application was built : HTML, CSS, JavaScript, React,
+            Redux,React-router and Firebase. This application is designed to
+            help users find a teacher. It utilizes sorting and filtering
+            features.
+          </p>
+          <a
+            href="https://github.com/Olena457/learn-easy.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src=".img/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://learn-easy-tau.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <!-- Друга пара: зображення зліва, опис справа -->
+      <div class="project-card">
+        <div class="project-details">
+          <h3 class="project-name">Project 3</h3>
+          <p class="project-description">Description of Project 3</p>
+          <a
+            href="https://github.com/username/project3"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="path/to/github-icon.png" alt="GitHub" />
+          </a>
+          <a href="https://project3-live.com" target="_blank" class="icon-link">
+            <img src="path/to/live-icon.png" alt="Live" />
+          </a>
+        </div>
+        <div class="project-image">
+          <img src="path/to/project3.png" alt="Project 3" />
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-details">
+          <h3 class="project-name">Project 4</h3>
+          <p class="project-description">Description of Project 4</p>
+          <a
+            href="https://github.com/username/project4"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="path/to/github-icon.png" alt="GitHub" />
+          </a>
+          <a href="https://project4-live.com" target="_blank" class="icon-link">
+            <img src="path/to/live-icon.png" alt="Live" />
+          </a>
+        </div>
+        <div class="project-image">
+          <img src="path/to/project4.png" alt="Project 4" />
+        </div>
+      </div>
+      <!-- Додаємо -->
+    </div>
   </div>
 </section>
 
