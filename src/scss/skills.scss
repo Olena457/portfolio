@@ -1,7 +1,6 @@
 .skills-section {
   padding: 0px 20px 50px 20px;
   font-size: 24px;
-  background: rgba(4, 44, 14, 0.82);
 
   @include media('tablet') {
     font-size: 26px;
@@ -83,14 +82,17 @@
 }
 
 .skills-block-list li {
-  background: #ffffffe2;
+  background: $_header_color_hover;
   padding: 12px;
+  color: $_link_color;
   border-radius: 20px;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 10px 20px 6px $_photo-shadow;
+
   animation: fadeInUp 1s ease-in-out forwards;
   opacity: 0;
 }
