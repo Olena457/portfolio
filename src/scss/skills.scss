@@ -35,9 +35,11 @@
   margin-bottom: 50px;
 
   @include media('tablet') {
+    font-weight: 700;
     font-size: 28px;
   }
   @include media('large-desktop') {
+    font-weight: 700;
     font-size: 32px;
   }
 }
