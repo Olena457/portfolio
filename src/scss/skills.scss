@@ -1,0 +1,107 @@
+.skills-section {
+  padding: 0px 20px 50px 20px;
+  font-size: 24px;
+  background: rgba(4, 44, 14, 0.82);
+
+  @include media('tablet') {
+    font-size: 26px;
+    padding: 0px 40px 100px 40px;
+  }
+
+  @include media('desktop') {
+    font-size: 28px;
+    padding: 0px 40px 100px 40px;
+  }
+  @include media('large-desktop') {
+    font-size: 28px;
+    padding: 0px 45px 100px 45px;
+  }
+}
+
+.skills-wrapper {
+  position: fixed;
+  z-index: -1;
+  height: calc(100vh - 76px);
+  width: 100%;
+  top: 76px;
+  background-image: url('../images/section_bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skills-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 50px;
+
+  @include media('tablet') {
+    font-size: 28px;
+  }
+  @include media('large-desktop') {
+    font-size: 32px;
+  }
+}
+
+.skills-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  @include media('tablet') {
+    flex-direction: column;
+  }
+}
+
+.skills-block {
+  max-width: 100%;
+
+  @include media('tablet') {
+    max-width: 100%;
+  }
+}
+
+.skills-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.skills-block-list li {
+  background: #ffffffe2;
+  padding: 12px;
+  border-radius: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
