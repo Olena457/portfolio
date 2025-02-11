@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-3f3e8d2c.js">
     <link rel="stylesheet" href="/portfolio/assets/vendor-73168167.css">
-    <link rel="stylesheet" href="/portfolio/assets/styles-dc96a27c.css">
+    <link rel="stylesheet" href="/portfolio/assets/styles-60792e47.css">
   </head>
 
   <body>
@@ -105,35 +105,12 @@
 
     </header>
     <main>
-      <!-- <section class="about-section" id="about">
+      <section class="about-section" id="about">
   <div class="about-wrapper">
     <div class="about-container container">
       <img
         class="about-photo"
-        width="500"
-        src="./img/gallery/event-1.png"
-        alt="event"
-      />
-      <div class="about-info">
-        <h3 class="about-name">Frontend Developer</h3>
-        <h4>Olena Demianenko</h4>
-        <p class="about-desc">
-          I am a hardworking, responsible, and detail-oriented Fullstack
-          Developer with a solid foundation in HTML/CSS/SASS/Grid,
-          JavaScript/TypeScript, React/Redux/Next.js, and Node.js/Express.js. I
-          am highly motivated, committed to continuous self-improvement, and
-          independently research and learn new technologies to deliver
-          high-quality solutions and grow as a frontend developer.
-        </p>
-      </div>
-    </div>
-  </div>
-</section> -->
-<section class="about-section" id="about">
-  <div class="about-wrapper">
-    <div class="about-container container">
-      <img
-        class="about-photo"
+        height="600"
         width="500"
         src="/portfolio/assets/event-1-8a81e908.png"
         alt="event"
@@ -208,10 +185,17 @@
   <div class="projects-container container">
     <h2 class="projects-title">My Projects</h2>
     <div class="projects-wrap">
+      <!-- Початок картки з фото -->
       <div
         class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/event-1-8a81e908.png')"
       ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -220,9 +204,10 @@
       >
         <h3 class="project-name">Events board</h3>
         <p class="project-description">
-          This application was built using HTML, CSS, JavaScript,React-router,
-          Redux, and Firebase. It is a web application for organizers and
-          participants to create and register for events.
+          Developing a monorepo website with routing.Creating own desing and
+          data. This application was built using HTML, CSS,
+          JavaScript,React-router, Redux, and Firebase. It is a web application
+          for organizers and participants to create and register for events.
         </p>
         <div class="link-container">
           <a
@@ -241,11 +226,19 @@
           </a>
         </div>
       </div>
+      <!-- Кінець картки з описом -->
 
+      <!-- Початок картки з фото -->
       <div
         class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/lingo-1-c5c26826.png')"
       ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -254,73 +247,289 @@
       >
         <h3 class="project-name">Learn easy</h3>
         <p class="project-description">
-          This application was built using HTML, CSS, JavaScript, React,
-          Redux,React-router, and Firebase. This application is designed to help
-          users find a teacher. It utilizes sorting and filtering features.
+          Developing a monorepo website with routing.Responsive desing,filteing
+          data. This application was built using HTML, CSS, JavaScript, React,
+          Redux,React-router,React-modal and Firebase. This application is
+          designed to help users find a teacher. It utilizes sorting and
+          filtering features.
         </p>
-        <a
-          href="https://github.com/Olena457/learn-easy.git"
-          target="_blank"
-          class="icon-link"
-        >
-          <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
-        </a>
-        <a
-          href="https://learn-easy-tau.vercel.app/"
-          target="_blank"
-          class="icon-link"
-        >
-          <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
-        </a>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/learn-easy.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://learn-easy-tau.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
       </div>
+      <!-- Кінець картки з описом -->
 
+      <!-- Початок картки з фото -->
+      <div
+        class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/campers-1-f9bb80cb.png')"
+      ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
       >
-        <h3 class="project-name">Project 3</h3>
-        <p class="project-description">Description of Project 3</p>
-        <a
-          href="https://github.com/username/project3"
-          target="_blank"
-          class="icon-link"
-        >
-          <img src="path/to/github-icon.png" alt="GitHub" />
-        </a>
-        <a href="https://project3-live.com" target="_blank" class="icon-link">
-          <img src="path/to/live-icon.png" alt="Live" />
-        </a>
+        <h3 class="project-name">Travel Tracks</h3>
+        <p class="project-description">
+          An application for booking campers. Technical stack: HTML, CSS,
+          JavaScript, React, Redux, Rest API, Git, Vercel. The multi-page
+          website with filtering data.
+        </p>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/travel-tracks.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://travel-tracks-sepia.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
       </div>
+      <!-- Кінець картки з описом -->
+
+      <!-- Початок картки з фото -->
       <div
         class="project-card project-image"
-        style="background-image: url('path/to/project3.png')"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/phonebook-1-1bd53925.png')"
       ></div>
+      <!-- Кінець картки з фото -->
 
+      <!-- Початок картки з описом -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
       >
-        <h3 class="project-name">Project 4</h3>
-        <p class="project-description">Description of Project 4</p>
-        <a
-          href="https://github.com/username/project4"
-          target="_blank"
-          class="icon-link"
-        >
-          <img src="path/to/github-icon.png" alt="GitHub" />
-        </a>
-        <a href="https://project4-live.com" target="_blank" class="icon-link">
-          <img src="path/to/live-icon.png" alt="Live" />
-        </a>
+        <h3 class="project-name">Phone Book</h3>
+        <p class="project-description">
+          Technical stack: HTML, CSS, JavaScript, React, Redux, Rest API, Git,
+          Vercel, Node.js, Mongodb. The multi-page website with filtering data.
+          The multi-page website than contains forms. Forms: registration,
+          login, and contacts. Contacts form has options: add , remove a phone
+          number, search by name, number.
+        </p>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/goit-react-hw-08n.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://goit-react-hw-08n.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
       </div>
+      <!-- Кінець картки з описом -->
+
+      <!-- Початок картки з фото -->
       <div
         class="project-card project-image"
-        style="background-image: url('path/to/project4.png')"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/bitcoin-1-3384cd7b.png')"
       ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
+      <div
+        class="project-card project-details"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <h3 class="project-name">Cryptocurrency</h3>
+        <p class="project-description">
+          This website is primarily built usung CSS Grid and features a
+          responsive design.It consists of the following pages Technical stack:
+          HTML, CSS, JavaScript,Grid,page navigation scrolling a modal window .
+          The multi-page,contains 3-pages. Infofmation on the structure of the
+          cryptocurrency business. Documentation on cryptocurrency
+          processes.Links to cryptocurrency websites.
+        </p>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/cryptocurrencies-grid.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://olena457.github.io/cryptocurrencies-grid/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <!-- Кінець картки з описом -->
+
+      <!-- Початок картки з фото -->
+      <div
+        class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/movie-1-52ff2ee6.png')"
+      ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
+      <div
+        class="project-card project-details"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <h3 class="project-name">Movie Search</h3>
+        <p class="project-description">
+          Technical stack: HTML, CSS, JavaScript, Rest API,React, Git.This
+          user-friendly and an indispensable tool for any movie enthusiast.
+          Information about the movie's cast,ratings and reviews and other
+          interesting tidbits about actors.
+        </p>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/goit-react-hw-05.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://goit-react-hw-05-lyart-gamma.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <!-- Кінець картки з описом -->
+      <!-- _______________________________________________________________________ -->
+      <!-- Початок картки з фото -->
+      <div
+        class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/search-photo-1-df9ff5b1.png')"
+      ></div>
+      <!-- Кінець картки з фото -->
+      <!-- Початок картки з описом -->
+      <div
+        class="project-card project-details"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <h3 class="project-name">Search Photo</h3>
+        <p class="project-description">
+          Technical stack: HTML, CSS, JavaScript, Rest API,Git.This
+          user-friendly and an indispensable tool for any photos.Scrolling page,
+          function with a random background.
+        </p>
+
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/cryptocurrencies-grid.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://olena457.github.io/cryptocurrencies-grid/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <!-- Кінець картки з описом -->
+
+      <!-- Початок картки з фото -->
+      <div
+        class="project-card project-image"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        style="background-image: url('/portfolio/assets/movie-1-52ff2ee6.png')"
+      ></div>
+      <!-- Кінець картки з фото -->
+
+      <!-- Початок картки з описом -->
+      <div
+        class="project-card project-details"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <h3 class="project-name">Movie Search</h3>
+        <p class="project-description">
+          Technical stack: HTML, CSS, JavaScript, Rest API,React, Git.This
+          user-friendly and an indispensable tool for any movie enthusiast.
+          Information about the movie's cast,ratings and reviews and other
+          interesting tidbits about actors.
+        </p>
+        <div class="link-container">
+          <a
+            href="https://github.com/Olena457/goit-react-hw-05.git"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://goit-react-hw-05-lyart-gamma.vercel.app/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="/portfolio/assets/internet-2b84484f.png" alt="Live" />
+          </a>
+        </div>
+      </div>
+      <!-- Кінець картки з описом -->
     </div>
   </div>
 </section>
