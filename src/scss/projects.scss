@@ -3,100 +3,94 @@
   background-color: #f7f7f7;
 
   .projects-container {
-    max-width: 1200px;
+    max-width: 1380px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
   .projects-title {
-    font-family: 'Comfortaa', sans-serif;
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
   }
 
   .projects-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include media('tablet') {
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    @include media('desktop') {
+      grid-template-columns: 4fr 1fr;
+    }
   }
 
   .project-card {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    max-width: 48%;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 
-    &:hover {
-      transform: translateY(-5px);
+    &.project-image {
+      min-height: 220px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px 6px $_photo-shadow;
+
+      @include media('desktop') {
+        height: 350px;
+      }
     }
 
-    .project-image {
+    &.project-details {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      margin-bottom: 20px;
+      padding: 20px;
+      background: #a4d20c;
 
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-    }
-
-    .project-details {
       text-align: center;
-
-      .project-name {
-        font-family: 'Signika', serif;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .project-description {
-        font-family: 'Signika', serif;
-        font-size: 16px;
-        margin-bottom: 15px;
-      }
-
-      .icon-link {
-        margin: 0 5px;
-
-        img {
-          width: 30px;
-          height: 30px;
-        }
-      }
+      border-radius: 8px;
     }
   }
+  // .project-card {
+  //   &.project-details {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     padding: 20px;
+  //     background: #a4d20c;
+  //     text-align: center;
+  //     border-radius: 8px;
 
-  @include media('tablet') {
-    .projects-wrap {
-      flex-direction: row;
-    }
+  //     @include media('desktop') {
+  //       margin-top: 100px;
+  //     }
+  //   }
 
-    .project-card {
-      max-width: 48%;
-    }
+  .project-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
 
-  @include media('desktop') {
-    .project-card {
-      flex-direction: row;
+  .project-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 
-      .project-image,
-      .project-details {
-        flex: 1;
-      }
-    }
+  .link-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
 
-    .projects-wrap {
-      flex-wrap: nowrap;
-    }
+  .icon-link {
+    display: inline-block;
+  }
+
+  .icon-link img {
+    width: 30px;
+    height: 30px;
   }
 }
