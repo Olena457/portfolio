@@ -23,7 +23,7 @@
   height: calc(100vh - 76px);
   width: 100%;
   top: 76px;
-  background-image: url('../images/section_bg.png');
+  // background-image: url('../images/section_bg.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,9 @@
 
 .skills-title {
   font-weight: 600;
+  color: $_title_color;
   font-size: 24px;
+  text-align: center;
   margin-bottom: 50px;
 
   @include media('tablet') {
@@ -40,7 +42,9 @@
   }
   @include media('large-desktop') {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 70px;
   }
 }
 
@@ -84,7 +88,7 @@
 }
 
 .skills-block-list li {
-  background: $_header_color_hover;
+  background: $_header_accent_color;
   padding: 12px;
   color: $_link_color;
   border-radius: 20px;

@@ -1,96 +1,3 @@
-// .projects-section {
-//   padding: 50px 0;
-//   background-color: #f7f7f7;
-
-//   .projects-container {
-//     max-width: 1380px;
-//     margin: 0 auto;
-//     padding: 0 20px;
-//   }
-
-//   .projects-title {
-//     font-size: 36px;
-//     text-align: center;
-//     margin-bottom: 30px;
-//   }
-
-//   .projects-wrap {
-//     display: grid;
-//     grid-template-columns: 1fr;
-
-//     @include media('tablet') {
-//       grid-template-columns: 1.2fr 1fr;
-//     }
-
-//     @include media('desktop') {
-//       grid-template-columns: 3fr 1fr;
-//     }
-//     @include media('large-desktop') {
-//       grid-template-columns: 4fr 1fr;
-//     }
-//   }
-
-//   .project-card {
-//     width: 100%;
-
-//     &.project-image {
-//       min-height: 220px;
-//       background-size: cover;
-//       background-position: center;
-//       border-radius: 8px;
-//       box-shadow: 0 10px 20px 6px $_photo-shadow;
-
-//       @include media('tablet') {
-//         height: 350px;
-//       }
-
-//       @include media('desktop') {
-//         height: 380px;
-//       }
-
-//       @include media('large-desktop') {
-//         height: 600px;
-//       }
-//     }
-
-//     &.project-details {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       padding: 20px;
-//       background: #a4d20c;
-
-//       text-align: center;
-//       border-radius: 8px;
-//     }
-//   }
-
-//   .project-name {
-//     font-size: 24px;
-//     font-weight: 700;
-//     margin-bottom: 10px;
-//   }
-
-//   .project-description {
-//     font-size: 16px;
-//     margin-bottom: 15px;
-//   }
-
-//   .link-container {
-//     display: flex;
-//     gap: 20px;
-//     justify-content: center;
-//   }
-
-//   .icon-link {
-//     display: inline-block;
-//   }
-
-//   .icon-link img {
-//     width: 30px;
-//     height: 30px;
-//   }
-// }
 .projects-section {
   padding: 50px 0;
   background-color: #f7f7f7;
@@ -103,6 +10,7 @@
 
   .projects-title {
     font-size: 36px;
+    color: $_title_color;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -163,8 +71,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 20px;
-      background: #a4d20c;
-
+      background: $_header_accent_color;
       text-align: center;
       border-radius: 8px;
     }

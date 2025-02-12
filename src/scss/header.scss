@@ -69,21 +69,17 @@
   color: $_header_accent_color;
   padding: 4px;
   border-radius: 12px;
-  // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   text-shadow: 2px 2px 5px rgba(210, 244, 15, 0.7);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: $_link_color;
     background-color: $_header_color_hover;
-    // box-shadow: 5px 5px 15px $_photo_shadow;
-    // box-shadow: 0 15px 20px rgba(210, 244, 15, 0.833);
     box-shadow: 0 12px 15px rgba(210, 244, 15, 0.7);
   }
   &:focus {
     color: $_link_color;
     background-color: $_header_color_hover;
-    // box-shadow: 0 15px 20px rgba(210, 244, 15, 0.833);
     box-shadow: 0 12px 15px rgba(210, 244, 15, 0.7);
   }
 }
@@ -109,13 +105,12 @@
     display: block;
   }
 
-  /* Приховуємо бекдроп для планшетів і більше */
+  /* hide backdrop*/
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
-/* Стилі для планшетів (768px - 1199.98px) */
 @include media('tablet') {
   .header-container {
     padding: 24px 72px;
@@ -143,7 +138,6 @@
   }
 }
 
-/* Стилі для десктопів (1200px - 1439.98px) */
 @include media('desktop') {
   .header-container {
     padding: 24px 72px;
@@ -171,7 +165,6 @@
   }
 }
 
-/* Стилі для великих десктопів (1440px і більше) */
 @include media('large-desktop') {
   .header-container {
     padding: 24px 72px;
