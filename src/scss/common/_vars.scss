@@ -5,7 +5,8 @@ $_link_color: #4b7b8b;
 $_title_color: #305d6c;
 $_shadow_text: #6a7e6f;
 $_photo-shadow: #6a7e6f;
-$_main_bg_color_body: linear-gradient(135deg, #dff5a0 0%, #89a7b2 100%);
+$_main_bg_color_body: linear-gradient(135deg, #dff5a0 0%, #89a7b2 100%)
+  no-repeat;
 $_card_bg_color: radial-gradient(circle, #ffffcc 0%, #dff5a0 50%, #89a7b2 100%);
 
 $_header_color_hover: #c4f04a;

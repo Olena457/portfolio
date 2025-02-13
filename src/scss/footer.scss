@@ -207,6 +207,13 @@
           width: 28px;
           height: 28px;
 
+          .icon-icon img:hover,
+          .icon-icon img:focus {
+            border: 0.5px solid #00eeff;
+            box-shadow: 12px 12px 15px #00eeff, -12px 12px 15px #00eeff,
+              12px -12px 15px #00eeff, -12px -12px 15px #00eeff;
+          }
+
           @include media('tablet') {
             width: 30px;
             height: 30px;
