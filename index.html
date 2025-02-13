@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +16,12 @@
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-3f3e8d2c.js">
     <link rel="stylesheet" href="/portfolio/assets/vendor-73168167.css">
-    <link rel="stylesheet" href="/portfolio/assets/styles-bd267928.css">
+    <link rel="stylesheet" href="/portfolio/assets/styles-b6eba3cb.css">
   </head>
 
   <body>
     <header class="header">
-      <div id="#header-id" class="header-container container">
+      <div id="#header" class="header-container container">
   <a href="./index.html" class="header-homepage-link"
     ><img
       class="header-logo-image"
@@ -52,52 +52,57 @@
   <nav class="header-desk-nav">
     <ul class="header-list">
       <li class="header-item">
-        <a href="#hero-id" class="header-link">Home</a>
+        <a href="#hero" class="header-link">Home</a>
       </li>
       <li class="header-item">
-        <a href="#about-us-id" class="header-link">About</a>
+        <a href="#about" class="header-link">About</a>
       </li>
       <li class="header-item">
-        <a href="#skills-id" class="header-link">Skills</a>
+        <a href="#skills" class="header-link">Skills</a>
       </li>
       <li class="header-item">
-        <a href="#footer-id" class="header-link">Footer</a>
+        <a href="#projects" class="header-link">Projects</a>
+      </li>
+      <li class="header-item">
+        <a href="#footer" class="header-link">Footer</a>
       </li>
 
       <li class="header-item">
-        <a href="./page-2.html" class="header-link">Gallery</a>
+        <a href="#footer" class="header-link">Gallery </a>
       </li>
 
       <li class="nav-item">
-        <a href="./page-3.html" class="header-link">Details</a>
+        <a href="#footer" class="header-link">Details </a>
+      </li>
+      <li class="nav-item">
+        <a href="#contacts" class="header-link"> Contacts </a>
       </li>
     </ul>
   </nav>
-
   <!-- mobile menu overlay -->
 
   <div class="header-backdrop"></div>
   <nav class="header-mob-nav">
     <ul class="header-list">
       <li class="header-item">
-        <a href="#hero-id" class="header-link">Home</a>
+        <a href="#hero" class="header-link">Home</a>
       </li>
       <li class="header-item">
-        <a href="#about-us-id" class="header-link">About</a>
+        <a href="#about" class="header-link">About</a>
       </li>
       <li class="header-item">
-        <a href="#skills-id" class="header-link">Skills</a>
+        <a href="#skills" class="header-link">Skills</a>
       </li>
       <li class="header-item">
-        <a href="#footer-id" class="header-link">Footer</a>
+        <a href="#footer" class="header-link">Footer</a>
       </li>
 
       <li class="header-item">
-        <a href="./page-2.html" class="header-link">Gallery</a>
+        <a href="#footer" class="header-link">Gallery</a>
       </li>
 
       <li class="nav-item">
-        <a href="./page-3.html" class="header-link">Details</a>
+        <a href="#footer" class="header-link">Details</a>
       </li>
     </ul>
   </nav>
@@ -118,7 +123,13 @@
 <section class="about-section" id="about">
   <div class="about-wrapper">
     <div class="about-container container">
-      <div class="about-photo-wrapper">
+      <div
+        class="about-photo-wrapper"
+        data-aos="flip-up"
+        data-aos-offset="120"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <img
           class="about-photo"
           height="700"
@@ -127,7 +138,13 @@
           alt="event"
         />
       </div>
-      <div class="about-info-container">
+      <div
+        class="about-info-container"
+        data-aos="flip-up"
+        data-aos-offset="120"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <h3 class="about-name">Frontend Developer</h3>
         <h4 class="about-my-name">Olena Demianenko</h4>
         <p class="about-desc">
@@ -198,7 +215,7 @@
   <div class="projects-container container">
     <h2 class="projects-title">My Projects</h2>
     <div class="projects-wrap">
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -206,9 +223,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/event-1-8a81e908.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -239,9 +256,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -249,9 +266,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/lingo-1-c5c26826.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -283,9 +300,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -293,9 +310,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/campers-1-f9bb80cb.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -325,9 +342,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- s -->
       <!-- _____________________________________________________________________ -->
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -335,9 +352,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/phonebook-1-1bd53925.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -369,9 +386,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -379,9 +396,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/bitcoin-1-3384cd7b.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -413,9 +430,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -423,9 +440,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/movie-1-52ff2ee6.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -456,9 +473,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
-      <!-- _______________________________________________________________________ -->
-      <!-- Початок картки з фото -->
+      <!-- e -->
+      <!-- ______________new section_________________________________________________________ -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -466,8 +483,8 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/search-photo-1-df9ff5b1.png')"
       ></div>
-      <!-- Кінець картки з фото -->
-      <!-- Початок картки з описом -->
+      <!-- e -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -498,42 +515,39 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
-
-      <!-- Початок картки з фото -->
+      <!-- e -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
-        style="background-image: url('/portfolio/assets/work-1-fc37c13f.png')"
+        style="background-image: url('/portfolio/assets/first-project-2-faee4953.png')"
       ></div>
-      <!-- Кінець картки з фото -->
-
-      <!-- Початок картки з описом -->
+      <!-- e -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
       >
-        <h3 class="project-name">Work Portal</h3>
+        <h3 class="project-name">Web Studio</h3>
         <p class="project-description">
-          Technical stack: HTML, CSS, JavaScript, SCSS, Git.This app includes a
-          information about employee, access to contact details and profiles.
-          The task management and reporting, tracked and completed efficiently.
-          progress tracking, and detailed reporting
+          Technical stack: HTML, CSS,Git.This user-friendly an application for
+          ordering business websites.
         </p>
+
         <div class="link-container">
           <a
-            href="https://github.com/Olena457/workers-app-sass.git"
+            href="https://github.com/Olena457/goit-markup-hw-06.git"
             target="_blank"
             class="icon-link"
           >
             <img src="/portfolio/assets/github-7f7cbc16.png" alt="GitHub" />
           </a>
           <a
-            href="https://olena457.github.io/workers-app-sass/"
+            href="https://olena457.github.io/goit-markup-hw-06/"
             target="_blank"
             class="icon-link"
           >
@@ -541,16 +555,16 @@
           </a>
         </div>
       </div>
-      <!-- end card description -->
+      <!-- e -->
     </div>
   </div>
 </section>
 <!-- _____________________TEAM PROJECTS_______________________ -->
-<section class="projects-section" id="projects">
+<section class="projects-section">
   <div class="projects-container container">
     <h2 class="projects-title">Team Projects</h2>
     <div class="projects-wrap">
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -558,9 +572,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/aqua-1-2035338b.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!--e -->
 
-      <!-- Початок картки з описом -->
+      <!--s-->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -590,9 +604,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!--s-->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -600,9 +614,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/portfolio-1-7e9494d7.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e-->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -631,9 +645,9 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e -->
 
-      <!-- Початок картки з фото -->
+      <!-- s -->
       <div
         class="project-card project-image"
         data-aos="flip-left"
@@ -641,9 +655,9 @@
         data-aos-duration="2000"
         style="background-image: url('/portfolio/assets/focus-1-860f1c07.png')"
       ></div>
-      <!-- Кінець картки з фото -->
+      <!-- e -->
 
-      <!-- Початок картки з описом -->
+      <!-- s -->
       <div
         class="project-card project-details"
         data-aos="flip-left"
@@ -673,7 +687,7 @@
           </a>
         </div>
       </div>
-      <!-- Кінець картки з описом -->
+      <!-- e-->
     </div>
   </div>
 </section>
@@ -681,11 +695,79 @@
     </main>
 
     <footer>
-      <footer class="container-footer">
-  <div class="footer-container">
-    <section>
-      <h3>footer</h3>
-    </section>
+      <footer class="contacts" id="footer">
+  <div class="contact-wrapper">
+    <div class="link-block">
+      <h2 class="links-title">Pages:</h2>
+      <p class="footer-gallery">
+        <a href="./page-2.html" class="footer-link">Gallery page</a>
+        <span class="footer-separator">/</span>
+        <a href="./page-3.html" class="footer-link">Details page</a>
+      </p>
+      <p class="footer-copyright">&copy;2025</p>
+    </div>
+    <div class="contact-block" id="contacts">
+      <h2 class="contact-title">Contacts:</h2>
+      <ul class="address-mobil-link">
+        <li class="adress-mobil-item">
+          <a class="address-mob current" href="tel:+380665534559"
+            >+38 (066) 553-45-59</a
+          >
+        </li>
+        <li class="adress-mobil-item">
+          <a class="address-mob" href="mailto:olenademianenko42@gmail.com"
+            >olenademianenko42@gmail.com</a
+          >
+        </li>
+      </ul>
+      <ul class="social mobile">
+        <li class="social-item">
+          <a
+            href="@OlenaDemi457"
+            class="social-link"
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="link to telegram"
+          >
+            <img
+              src="./images/telegram.png"
+              alt="Telegram"
+              class="social-icon"
+            />
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://facebook.com"
+            class="social-link"
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="link to Facebook"
+          >
+            <img
+              src="./images/facebook.png"
+              alt="Facebook"
+              class="social-icon"
+            />
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.linkedin.com/in/olena-demianenko0808-383991312/"
+            class="social-link"
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="link to Linkedin"
+          >
+            <img
+              src="./images/linkedin.png"
+              alt="LinkedIn"
+              class="social-icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
 
