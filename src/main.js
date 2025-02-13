@@ -1,5 +1,5 @@
 import './js/header.js';
-// import './js/gallery';
+import './js/gallery';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

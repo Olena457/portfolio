@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,5 +26,98 @@
         <div class="gallery-container"></div>
       </div>
     </section>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/styles.scss" />
+  </head>
+  <body>
+    <section>
+      <div class="page-header container">
+        <a href="./index.html#footer" class="page-button">Go to home</a>
+      </div>
+      <div class="page-container container">
+        <div class="description">
+          <h1>Welcome to Gallery page 2</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+        <div class="gallery-container container">
+          <h2 class="gallery-title">Gallery</h2>
+          <div class="swiper mySwiper">
+            <ul class="gallery-list swiper-wrapper">
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/event.png"
+                  alt="event"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/gallery-large.png"
+                  alt="gallery"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/search-photo.png"
+                  alt="search photo"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/work-1.png"
+                  alt="work"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/movie.png"
+                  alt="movie"
+                  class="gallery-image"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="swiper-button-prev">
+            <img
+              src="./img/left.png"
+              class="gallery-button-icon"
+              alt="prev arrow"
+              width="66"
+              height="66"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              src="./img/right.png"
+              class="gallery-button-icon"
+              alt="next arrow"
+              width="66"
+              height="66"
+            />
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
