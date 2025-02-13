@@ -57,7 +57,8 @@
     .links-title {
       font-size: 24px;
       color: $_title_color;
-      text-shadow: 2px 2px 5px $_shadow_text;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
       margin-bottom: 24px;
 
       @include media('tablet') {
@@ -104,7 +105,7 @@
           &:focus {
             color: $_link_color;
             background: $_header_color_hover;
-            box-shadow: 0 12px 15px rgba(210, 244, 15, 0.7);
+            box-shadow: 0 12px 15px #00eeff;
           }
 
           @include media('tablet') {
@@ -153,6 +154,7 @@
       }
 
       .footer-separator {
+        height: 5px;
         width: 3px;
         margin: 0 5px;
         color: $_title_color;
