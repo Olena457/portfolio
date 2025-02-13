@@ -5,12 +5,12 @@ $_link_color: #4b7b8b;
 $_title_color: #305d6c;
 $_shadow_text: #6a7e6f;
 $_photo-shadow: #6a7e6f;
-$_main_bg_color_body: linear-gradient(135deg, #ebfac0 0%, #89a7b2 100%);
-// $_main_bg_color_body: linear-gradient(90deg, #ebfac0 0%, #00b1ff 100%);
+$_main_bg_color_body: linear-gradient(135deg, #dff5a0 0%, #89a7b2 100%);
+$_card_bg_color: radial-gradient(circle, #ffffcc 0%, #dff5a0 50%, #89a7b2 100%);
 
 $_header_color_hover: #c4f04a;
-// $_header_color_hover: #dbf16c;
 $_header_accent_color: #dff5a0;
 $_header_color_bg: linear-gradient(90deg, #dff5a0 0%, #4b7b8b 100%);
+$_footer_color_bg: linear-gradient(90deg, #4b7b8b 0%, #dff5a0 100%);
 $_button_bg: linear-gradient(90deg, #c4f04a 0%, #19292e 100%);
 $_white_color: #ffffff;

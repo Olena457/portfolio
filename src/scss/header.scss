@@ -69,7 +69,7 @@
   color: $_header_accent_color;
   padding: 4px;
   border-radius: 12px;
-  text-shadow: 2px 2px 5px rgba(210, 244, 15, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -80,7 +80,7 @@
   &:focus {
     color: $_link_color;
     background-color: $_header_color_hover;
-    box-shadow: 0 12px 15px rgba(210, 244, 15, 0.7);
+    box-shadow: 0 12px 15px #00eeff;
   }
 }
 

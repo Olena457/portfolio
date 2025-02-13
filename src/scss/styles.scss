@@ -12,12 +12,7 @@
   line-height: 24px;
   font-weight: 400;
   color: $_main_color;
-  background-color: $_white_color;
-  // background: radial-gradient(circle, #dff5a0 0%, #4b7b8b 100%) top left,
-  //               radial-gradient(circle, #89a7b2 0%, #ebfac0 100%) bottom right,
-  //               radial-gradient(circle, #00eeff 0%, #c4f04a 100%) center;
-  background-repeat: no-repeat;
-  background-size: 300px 300px, 300px 300px, 300px 300px;
+  background: $_main_bg_color_body;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

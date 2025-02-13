@@ -1,0 +1,35 @@
+// .container {
+//   background-color: $_main_bg_color_body;
+//   width: 100%;
+//   max-width: $large-desktop;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 0 16px;
+
+//   @include media('tablet') {
+//     padding: 24px;
+//   }
+
+//   @include media('desktop') {
+//     padding: 30px;
+//   }
+
+//   @include media('large-desktop') {
+//     max-width: 1440px;
+//     padding: 40px;
+//   }
+// }
+
+.page-container {
+  background: linear-gradient(
+    135deg,
+    #dff5a0 20%,
+    #c4f04a 20%,
+    #00eeff 40%,
+    #89a7b2 60%,
+    #4b7b8b 80%,
+    #4b7b8b 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
