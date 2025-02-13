@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */import{S as t,N as r,P as n}from"./assets/vendor-16c3486c.js";const i=new t(".mySwiper",{slidesPerView:"auto",spaceBetween:4,loop:!0,modules:[r,n],navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{1200:{spaceBetween:32}}});document.addEventListener("keydown",e=>{e.key==="ArrowLeft"?i.slidePrev():e.key==="ArrowRight"&&i.slideNext()});
+//# sourceMappingURL=commonHelpers2.js.map

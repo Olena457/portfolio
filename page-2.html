@@ -12,10 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/styles.scss" />
-    <script type="module" crossorigin src="/portfolio/assets/vendor-4b1f2a3d.js"></script>
-    <script type="module" crossorigin src="/portfolio/assets/main-6bf32694.js"></script>
-    <link rel="stylesheet" href="/portfolio/assets/vendor-1cc9df73.css">
-    <link rel="stylesheet" href="/portfolio/assets/styles-1cc91aa7.css">
+    <script type="module" crossorigin src="/portfolio/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-16c3486c.js">
+    <link rel="stylesheet" href="/portfolio/assets/vendor-4dcca982.css">
+    <link rel="stylesheet" href="/portfolio/assets/styles-eeeb2bf0.css">
   </head>
   <body>
     <section>
@@ -27,9 +28,72 @@
           <h1>Welcome to Gallery page 2</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
         </div>
-        <div class="gallery-container"></div>
+        <div class="gallery-container container">
+          <h2 class="gallery-title">Gallery</h2>
+          <div class="swiper mySwiper">
+            <ul class="gallery-list swiper-wrapper">
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/event.png"
+                  alt="event"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/gallery-large.png"
+                  alt="gallery"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/search-photo.png"
+                  alt="search photo"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/work-1.png"
+                  alt="work"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./img/gallery/movie.png"
+                  alt="movie"
+                  class="gallery-image"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="swiper-button-prev">
+            <img
+              src="./img/left.png"
+              class="gallery-button-icon"
+              alt="prev arrow"
+              width="66"
+              height="66"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              src="./img/right.png"
+              class="gallery-button-icon"
+              alt="next arrow"
+              width="66"
+              height="66"
+            />
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
+    <script type="module" src="./js/gallery.js"></script>
   </body>
 </html> -->
 <!DOCTYPE html>
@@ -61,23 +125,24 @@
           <h2 class="gallery-title">Gallery</h2>
           <div class="swiper mySwiper">
             <ul class="gallery-list swiper-wrapper">
+              <!-- Дублікати зображень для тестування -->
               <li class="swiper-slide">
                 <img
-                  src="/portfolio/assets/event-555b39f6.png"
+                  src="/portfolio/assets/photo-wooden-d5793da2.jpg"
                   alt="event"
                   class="gallery-image"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="/portfolio/assets/gallery-large-a2e26643.png"
+                  src="/portfolio/assets/event-555b39f6.png"
                   alt="gallery"
                   class="gallery-image"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="/portfolio/assets/search-photo-06ee7657.png"
+                  src="/portfolio/assets/aqua-2d5af268.png"
                   alt="search photo"
                   class="gallery-image"
                 />
@@ -92,6 +157,76 @@
               <li class="swiper-slide">
                 <img
                   src="/portfolio/assets/movie-70a65e73.png"
+                  alt="movie"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/bitcoin-a6251dbf.png"
+                  alt="event"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/first-project-1-45b6ce4b.png"
+                  alt="gallery"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/focus-90ddafa2.png"
+                  alt="search photo"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/portfolio-1-7e9494d7.png"
+                  alt="work"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/phonebook-fe2f1708.png"
+                  alt="movie"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/campers-0b199649.png"
+                  alt="event"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/lingo-822434b9.png"
+                  alt="gallery"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/work-a385abe5.png"
+                  alt="search photo"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/game-be4b7d88.png"
+                  alt="work"
+                  class="gallery-image"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/portfolio/assets/gallery-large-a2e26643.png"
                   alt="movie"
                   class="gallery-image"
                 />
