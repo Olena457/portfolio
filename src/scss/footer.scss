@@ -204,12 +204,12 @@
         }
 
         .social-icon {
-          width: 24px;
-          height: 24px;
+          width: 28px;
+          height: 28px;
 
           @include media('tablet') {
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
           }
 
           @include media('desktop') {
