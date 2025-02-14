@@ -1,14 +1,20 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Swiper from 'swiper/bundle';
+import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import 'swiper/css/bundle';
 
 const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 4,
+  modules: [Navigation, Pagination, EffectCoverflow],
   loop: true,
-  modules: [Navigation, Pagination],
+  centeredSlides: true,
+  effect: 'coverflow',
+  grabCursor: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: -50,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -18,8 +24,21 @@ const swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
     1200: {
-      spaceBetween: 32,
+      slidesPerView: 1.2,
+      spaceBetween: 22,
+    },
+    1440: {
+      slidesPerView: 1.2,
+      spaceBetween: 25,
     },
   },
 });

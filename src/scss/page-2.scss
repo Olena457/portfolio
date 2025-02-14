@@ -1,194 +1,172 @@
-// body {
-//   position: absolute;
-//   background: greenyellow;
-// }
+.page-button {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  @include font(11, 17);
+  padding: 4px;
+  border-radius: 12px;
+  width: max-content;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-// .gallery-container {
-//   padding: 32px 16px 64px 16px;
-//   position: relative;
-//   @include media(desktop) {
-//     padding: 64px 161px 118px 161px;
-//   }
-// }
+.page-button-text {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: $_header_accent_color;
+  border-radius: 12px;
+  border: 1px solid #00eeff;
+  background: $_footer_color_bg;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .gallery-title {
-//   color: red;
-//   text-align: center;
-//   margin-bottom: 24px;
-//   @include font(28, 42);
+  &:hover {
+    color: $_link_color;
+    background: $_header_color_bg;
+    box-shadow: 0 12px 15px #00eeff;
+  }
 
-//   @include media(desktop) {
-//     @include font(48, 72);
-//     margin-bottom: 40px;
-//   }
-// }
+  @include media('tablet') {
+    font-size: 18px;
+  }
 
-// .swiper-slide {
-//   object-fit: cover;
-//   max-width: 261px;
-//   position: relative;
-//   @include media(desktop) {
-//     max-width: 736px;
-//   }
-// }
+  @include media('desktop') {
+    font-size: 24px;
+  }
 
-// .gallery-image {
-//   object-fit: cover;
-//   border-radius: 8px;
-//   width: 100%;
-//   height: 100%;
-//   max-width: 261px;
-//   max-height: 146px;
-//   @include media(desktop) {
-//     max-width: 736px;
-//     max-height: 414px;
-//   }
-// }
-
-// .swiper-pagination {
-//   bottom: 24px;
-//   position: absolute;
-//   @include media(desktop) {
-//     bottom: 60px;
-//   }
-// }
-
-// .swiper-pagination-bullet {
-//   background: red;
-//   opacity: 100;
-//   @include media(desktop) {
-//     width: 12px;
-//     height: 12px;
-//   }
-// }
-
-// .swiper-pagination-bullet-active {
-//   background: #040f00;
-// }
-
-// .swiper-button-prev::after,
-// .swiper-button-next::after,
-// .swiper-button-prev,
-// .swiper-button-next {
-//   display: none;
-// }
-
-// @include media(desktop) {
-//   .swiper-button-prev {
-//     left: 72px;
-//     &:hover {
-//       transform: translateX(-10px);
-//     }
-//   }
-
-//   .swiper-button-next {
-//     right: 72px;
-//     &:hover {
-//       transform: translateX(10px);
-//     }
-//   }
-//   .swiper-button-prev,
-//   .swiper-button-next {
-//     display: flex;
-//     width: 66px;
-//     height: 66px;
-//     transition: transform 0.3s ease;
-//   }
-// }
-body {
-  position: absolute;
-  background: greenyellow;
+  @include media('large-desktop') {
+    font-size: 26px;
+  }
 }
 
 .gallery-container {
-  padding: 32px 16px 64px 16px;
+  padding: 20px 16px 50px;
   position: relative;
-  @include media(desktop) {
-    padding: 64px 161px 118px 161px;
+  margin-bottom: 70px;
+
+  @include media('tablet') {
+    padding: 24px 30px 120px;
+    margin-bottom: 100px;
+  }
+  @include media('desktop') {
+    padding: 24px 90px 120px;
+    margin-bottom: 120px;
+  }
+
+  @include media('large-desktop') {
+    padding: 44px 120px 120px;
+    margin-bottom: 170px;
   }
 }
 
 .gallery-title {
-  color: red;
+  color: $_title_color;
   text-align: center;
-  margin-bottom: 24px;
-  @include font(28, 42);
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
-  @include media(desktop) {
-    @include font(48, 72);
-    margin-bottom: 40px;
+  @include media('tablet') {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  @include media('desktop') {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  @include media('large-desktop') {
+    font-size: 36px;
   }
 }
 
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
 .swiper-slide {
-  object-fit: cover;
-  max-width: 261px;
-  position: relative;
-  @include media(desktop) {
-    max-width: 736px;
+  width: 260px;
+  height: auto;
+  transition: transform 0.3s;
+
+  @include media('tablet') {
+    width: 460px;
+  }
+
+  @include media('desktop') {
+    width: 736px;
+  }
+
+  @include media('large-desktop') {
+    width: 1000px;
   }
 }
 
 .gallery-image {
+  width: 100%;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  width: 100%;
-  height: 100%;
-  max-width: 261px;
-  max-height: 146px;
-  @include media(desktop) {
-    max-width: 736px;
-    max-height: 414px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  @include media('tablet') {
+    height: 340px;
+  }
+
+  @include media('desktop') {
+    height: 420px;
+  }
+
+  @include media('large-desktop') {
+    height: 480px;
   }
 }
 
 .swiper-pagination {
-  bottom: 24px;
-  position: absolute;
-  @include media(desktop) {
-    bottom: 60px;
-  }
+  bottom: 24px !important;
 }
 
 .swiper-pagination-bullet {
-  background: red;
-  opacity: 100;
-  @include media(desktop) {
+  background-color: red;
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+
+  @include media('desktop') {
     width: 12px;
     height: 12px;
   }
 }
 
 .swiper-pagination-bullet-active {
-  background: #040f00;
+  background: #00eeff;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after,
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
+  width: 20px;
+  height: 20;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px #0f0f0b);
+
+  @include media('desktop') {
+    display: flex;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px #fdfdfbd6);
+
+    transform: scale(1.1);
+  }
 }
 
-@include media(desktop) {
-  .swiper-button-prev {
-    left: 72px;
-    &:hover {
-      transform: translateX(-10px);
-    }
-  }
+.swiper-button-prev {
+  left: 20px;
+}
 
-  .swiper-button-next {
-    right: 72px;
-    &:hover {
-      transform: translateX(10px);
-    }
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: flex;
-    width: 66px;
-    height: 66px;
-    transition: transform 0.3s ease;
-  }
+.swiper-button-next {
+  right: 20px;
 }
