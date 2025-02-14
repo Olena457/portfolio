@@ -10,8 +10,9 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .arrow {
-  padding: 4px;
+  padding: 2px;
   border-radius: 12px;
   border: 1px solid #00eeff;
   background: $_footer_color_bg;
@@ -22,10 +23,23 @@
     box-shadow: 0 12px 15px #00eeff;
   }
 }
-
+.arrow-left {
+  padding: 6px;
+  margin-left: 15px;
+  border-radius: 12px;
+  border: 1px solid #00eeff;
+  background: $_footer_color_bg;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.5);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: $_header_color_bg;
+    box-shadow: 0 12px 15px #00eeff;
+  }
+}
 .page-button-text {
   font-size: 14px;
   // margin-top: 20px;
+  padding: 16px;
   color: $_header_accent_color;
   border-radius: 12px;
   border: 1px solid #00eeff;
