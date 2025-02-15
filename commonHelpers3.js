@@ -1,2 +1,0 @@
-import"./assets/styles-3c2a2e89.js";import{S as e}from"./assets/vendor-e8ae9523.js";new e(".detailsSwiper",{loop:!0,effect:"coverflow",slidesPerView:5,centeredSlides:!0,initialSlide:2,speed:1e3,coverflowEffect:{rotate:0,stretch:80,depth:150,modifier:1,slideShadows:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{320:{slidesPerView:1,spaceBetween:20},768:{slidesPerView:1,spaceBetween:30},1200:{slidesPerView:1,spaceBetween:35},1440:{slidesPerView:2,spaceBetween:45}}});
-//# sourceMappingURL=commonHelpers3.js.map
