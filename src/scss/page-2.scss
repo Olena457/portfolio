@@ -1,7 +1,10 @@
+.page-header {
+  margin-bottom: 20px;
+}
 .page-button {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   gap: 16px;
   font-size: 26px;
   padding: 4px;
@@ -38,8 +41,7 @@
 }
 .page-button-text {
   font-size: 14px;
-  // margin-top: 20px;
-  padding: 16px;
+  // padding: 16px;
   color: $_header_accent_color;
   border-radius: 12px;
   border: 1px solid #00eeff;
@@ -68,29 +70,28 @@
 }
 
 .gallery-container {
-  padding: 50px 16px 50px 16px;
+  padding: 20px 16px 0px 16px;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 
   @include media('tablet') {
-    padding: 50px 20px 70px 20px;
-    // margin-bottom: 100px;
+    padding: 0px 20px 10px 20px;
+    margin-bottom: 5px;
   }
   @include media('desktop') {
-    padding: 20px 90px 65px 90px;
-    // margin-bottom: 120px;
+    padding: 20px 90px 10px 90px;
+    margin-bottom: 10px;
   }
 
   @include media('large-desktop') {
     padding: 20px 120px 25px 120px;
-    // margin-bottom: 170px;
+    margin-bottom: 10px;
   }
 }
-
 .gallery-title {
   color: $_title_color;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
   text-shadow: 2px 2px 5px $_photo-shadow;
 
   @include media('tablet') {
@@ -105,7 +106,7 @@
 
   @include media('large-desktop') {
     font-size: 34px;
-    font-size: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -255,14 +256,14 @@
 }
 .marquee-line {
   flex-shrink: 0;
-  padding: 15px 0;
+  padding: 5px 0;
   min-width: 100%;
   white-space: nowrap;
+
   animation-name: marqueeLine;
   animation-duration: 8s;
   animation: marqueeLine 15s linear infinite;
-  // animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+
   border-top: 2px dashed #00eeff;
   border-bottom: 2px dashed #00eeff;
 }
@@ -291,6 +292,25 @@
   to {
     transform: translateX(-100%);
   }
+}
+.down {
+  border: 0.1px solid #dff5a0;
+}
+.down-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 160px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.down-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 9px 14px;
+  border: none;
 }
 // .marquee-line {
 //   flex-shrink: 0;
