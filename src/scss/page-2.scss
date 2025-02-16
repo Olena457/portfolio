@@ -1,10 +1,21 @@
-.page-header {
+.page-header-gallery {
   margin-bottom: 20px;
+
+  @include media('tablet') {
+    margin-bottom: 10px 16px 0px 16px;
+  }
+
+  @include media('desktop') {
+    font-size: 24px;
+  }
+
+  @include media('large-desktop') {
+    font-size: 26px;
+  }
 }
 .page-button {
   display: flex;
   align-items: flex-start;
-  // margin-bottom: 5px;
   gap: 16px;
   font-size: 26px;
   padding: 4px;
@@ -41,7 +52,6 @@
 }
 .page-button-text {
   font-size: 14px;
-  // padding: 16px;
   color: $_header_accent_color;
   border-radius: 12px;
   border: 1px solid #00eeff;
@@ -208,7 +218,6 @@
   font-weight: 700;
   font-family: 'Arial', sans-serif;
   font-size: 36px;
-
   margin-bottom: 200px;
   color: $_white_color;
   line-height: 1.14;
@@ -216,6 +225,27 @@
   text-transform: uppercase;
   background-color: transparent;
   text-shadow: 2px 2px 5px $_shadow_text;
+
+  @include media('tablet') {
+    .marquee {
+      font-size: 40px;
+      line-height: 1.13;
+    }
+  }
+
+  @include media('desktop') {
+    .marquee {
+      font-size: 60px;
+      line-height: 1.13;
+    }
+  }
+
+  @include media('large-desktop') {
+    .marquee {
+      font-size: 58px;
+      line-height: 1.1;
+    }
+  }
 }
 .span-yellow {
   color: $_header_color_hover;
@@ -259,11 +289,9 @@
   padding: 5px 0;
   min-width: 100%;
   white-space: nowrap;
-
   animation-name: marqueeLine;
   animation-duration: 8s;
   animation: marqueeLine 15s linear infinite;
-
   border-top: 2px dashed #00eeff;
   border-bottom: 2px dashed #00eeff;
 }
@@ -275,7 +303,7 @@
 }
 @include media('desktop') {
   .marquee-line {
-    padding: 15px 0;
+    padding: 10px 0;
   }
 }
 
@@ -312,31 +340,3 @@
   padding: 9px 14px;
   border: none;
 }
-// .marquee-line {
-//   flex-shrink: 0;
-//   padding: 20px 0;
-//   min-width: 100%;
-//   white-space: nowrap;
-//   animation: marqueeLine 9s linear infinite, pulse 1.5s(3s) ease-in-out infinite;
-//   border-top: 2px dashed #00eeff;
-//   border-bottom: 2px dashed #00eeff;
-// }
-
-// @keyframes marqueeLine {
-//   from {
-//     transform: translateX(0);
-//   }
-//   to {
-//     transform: translateX(-100%);
-//   }
-// }
-
-// @keyframes pulse {
-//   0%,
-//   100% {
-//     transform: scale(1);
-//   }
-//   50% {
-//     transform: scale(1.05);
-//   }
-// }
