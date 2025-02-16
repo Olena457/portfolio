@@ -186,7 +186,7 @@
 .swiper-button-next {
   display: none;
   width: 20px;
-  height: 20;
+  height: 20px;
   transition: transform 0.3s ease;
   filter: drop-shadow(0 2px 4px #0f0f0b);
 
@@ -194,9 +194,12 @@
     display: flex;
   }
 
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   &:hover {
     filter: drop-shadow(0 2px 4px #fdfdfbd6);
-
     transform: scale(1.1);
   }
 }

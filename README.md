@@ -1,9 +1,8 @@
 # My Portfolio
 
-<hr style="border: 1px solid yellow;">
-_This website combines projects created independently and in collaboration with a
-team. It allows users to conveniently explore the works while staying on a
-single page._
+_*This website combines projects created independently and in collaboration with
+a team. It allows users to conveniently explore the works while staying on a
+single page.*_
 
 ---
 
@@ -19,8 +18,6 @@ single page._
 
 ## The site contains 3 pages:
 
-<hr style="border: 1px solid yellow;">
-
 - **Home**: _Introduction to the projects and the developer created with js and
   AOS._
 - **Gallery**: _Additional photo gallery created with Swiper._
@@ -30,8 +27,6 @@ single page._
   ***
 
 ## This site is created using:
-
-<hr style="border: 1px solid yellow;">
 
 - `Vite`
 - `GitHub Pages`
@@ -45,9 +40,9 @@ single page._
 
 <hr style="border: 1px solid yellow;">
 
-- **The first page** provides an introductory character with the projects and
-  the developer.
-- **The second page** contains an additional photo gallery from the applications
+- `The first page` provides an introductory character with the projects and the
+  developer.
+- `The second page`contains an additional photo gallery from the applications
   created with Swiper.
-- **The third page** contains information related to education in the IT field
-  and is created with Grid.
+- `The third page` contains information related to education in the IT field and
+  is created with Grid.
