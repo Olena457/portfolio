@@ -8,7 +8,7 @@ single page.*_
 
 <div style="display: flex; gap: 20px;">
     <img src="./src/img/gallery/port-baner.png" alt="Image 1" style="width: 380px; height: 220px;">
-     <img src="./src/img/gallery/sertificate.png" alt="Image 4" style="width: 380px; height: 220px;">
+     <img src="./src/img/gallery/port-footer.png" alt="Image 4" style="width: 380px; height: 220px;">
 </div>
 
 ## The site contains 2 pages:
