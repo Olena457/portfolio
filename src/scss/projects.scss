@@ -43,7 +43,6 @@
 
     &:hover {
       transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(210, 244, 15, 0.833);
     }
 
     &.project-image {
@@ -106,8 +105,6 @@
   }
   .icon-link img:hover,
   .icon-link img:focus {
-    border: 0.5px solid #00eeff;
-    box-shadow: 12px 12px 15px #00eeff, -12px 12px 15px #00eeff,
-      12px -12px 15px #00eeff, -12px -12px 15px #00eeff;
+    transform: scale(1.2);
   }
 }
